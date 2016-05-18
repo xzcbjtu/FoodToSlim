@@ -2,16 +2,20 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="bjtu.edu.cn.foodtoslim.login"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="1.0">
 
     <uses-sdk android:minSdkVersion="14" />
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:icon="@drawable/icon"
-        android:label="@string/app_name" >
+        android:label="@string/app_name">
         <activity
             android:name=".WelcomeActivity"
-            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,51 +25,44 @@
         <activity
             android:name=".LoginActivity"
             android:theme="@android:style/Theme.NoTitleBar"
-            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
-        </activity>
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
         <activity
             android:name=".RegisterActivity"
             android:theme="@android:style/Theme.Holo.Light.NoActionBar"
-            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
-        </activity>
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
         <activity
             android:name=".FillInfor1Activity"
             android:theme="@android:style/Theme.Holo.Light.NoActionBar"
-            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
-        </activity>
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
         <activity
             android:name=".FillInfor2Activity"
             android:theme="@android:style/Theme.Holo.Light.NoActionBar"
-            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
-        </activity>
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
         <activity
             android:name="bjtu.edu.cn.foodtoslim.main.FragmentTab"
-            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
-        </activity>
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
         <activity
             android:name="bjtu.edu.cn.foodtoslim.activity.WeekPlanActivity"
-            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
-        </activity>
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
         <activity
             android:name="bjtu.edu.cn.foodtoslim.activity.DayPlanActivity"
-            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
-        </activity>
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
         <activity
             android:name="bjtu.edu.cn.foodtoslim.activity.RecipeActivity"
-            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
-        </activity>
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
         <activity
             android:name="bjtu.edu.cn.foodtoslim.activity.HealthReportActivity"
-            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
-        </activity>
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
         <activity
             android:name="bjtu.edu.cn.foodtoslim.activity.HeightRecordActivity"
-            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
-        </activity>
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
         <activity
             android:name="bjtu.edu.cn.foodtoslim.activity.UserDetailActivity"
-            android:theme="@android:style/Theme.Holo.Light.NoActionBar"  >
-        </activity>
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+        <activity
+            android:name="bjtu.edu.cn.foodtoslim.activity.ModifyInforActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+        <activity android:name="bjtu.edu.cn.foodtoslim.activity.SearchRecipeActivity"></activity>
     </application>
 
 </manifest>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical" >
+
+    <LinearLayout
+
+        android:background="@android:color/white"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dip">
+
+        <EditText
+            android:layout_width="260dp"
+            android:layout_height="30dip"
+            android:background="#F0F0F0"
+            android:layout_marginLeft="35dp"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:hint="请输入搜索菜名"
+            android:textSize="14.0sp" android:textColor="#ff545454"
+            />
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/searchicon1"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <AutoCompleteTextView
+        android:id="@+id/autoText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10">
+
+        <requestFocus />
+    </AutoCompleteTextView>
+    <ListView
+        android:id="@+id/searchlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="25dp" >
+
+    </ListView>
+
+
+</LinearLayout>

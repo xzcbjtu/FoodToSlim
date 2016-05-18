@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:orientation="vertical" 
+    android:background="@android:color/white">
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp" >
+        <TextView 
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X月X日"
+            android:textColor="#ff545454"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/way"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="星期X"
+            android:textColor="#ff545454"
+            android:textSize="12sp"
+            />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp" >
+        
+          <TextView 
+            android:id="@+id/br"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="早餐"
+            android:textColor="#ff545454"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:id="@+id/bre"
+            android:layout_marginLeft="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XXXX"
+            android:textColor="#ff545454"
+            android:textSize="16sp"
+            />
+        
+        
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp" >
+        
+          <TextView 
+            android:id="@+id/lu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="午餐"
+            android:textColor="#ff545454"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:id="@+id/lun"
+            android:layout_marginLeft="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XXXX"
+            android:textColor="#ff545454"
+            android:textSize="16sp"
+            />
+        
+        
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp" >
+        
+          <TextView 
+            android:id="@+id/di"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="晚餐"
+            android:textColor="#ff545454"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:id="@+id/din"
+            android:layout_marginLeft="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XXXX"
+            android:textColor="#ff545454"
+            android:textSize="16sp"
+            />
+        
+        
+    </LinearLayout>
+
+</LinearLayout>

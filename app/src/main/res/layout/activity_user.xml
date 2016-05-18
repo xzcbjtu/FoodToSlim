@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:layout_width="fill_parent" 
+        android:layout_height="50dip">
+        <TextView android:layout_centerInParent="true"   android:textColor="#5B5B5B" android:textSize="20.0sp"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我" />
+        
+    </RelativeLayout>
+    
+     <LinearLayout
+                android:id="@+id/userdetail"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@android:color/white">
+
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/user52"
+                    android:id="@+id/imageView2" />
+
+                <LinearLayout
+
+                    android:layout_marginLeft="35dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="用户名"
+                        android:textColor="#5B5B5B"
+                        android:id="@+id/textView4" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:text="个人资料"
+                        android:textColor="#9D9D9D"
+                        android:textSize="13sp"
+                        android:id="@+id/textView5" />
+                </LinearLayout>
+
+            </LinearLayout>
+            
+     <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@android:color/white">
+                
+          <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/cot"
+                   />
+          
+            <LinearLayout
+
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                         android:textSize="17sp"
+                        android:layout_height="wrap_content"
+                       android:textColor="#5B5B5B"
+                        android:text="我的收藏"
+                       />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="收藏的喜欢的菜谱"
+                        android:textColor="#9D9D9D"
+                        />
+                </LinearLayout>
+                
+            <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="143dp"
+                    android:layout_gravity="center_vertical"
+                     android:background="@drawable/more"
+                    >
+                    
+                    
+                </ImageView>
+         
+     </LinearLayout>
+      <View android:background="@drawable/shape_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+     
+     <LinearLayout
+                
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@android:color/white">
+                
+          <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/cot1"
+                   />
+          
+            <LinearLayout
+
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                         android:textSize="17sp"
+                        android:layout_height="wrap_content"
+                       android:textColor="#5B5B5B"
+                        android:text="消息记录"
+                       />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="系统推送的健康报告，健康菜谱"
+                        android:textColor="#9D9D9D"
+                        />
+                </LinearLayout>
+                
+            <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="72dp"
+                    android:layout_gravity="center_vertical"
+                     android:background="@drawable/more"
+                    >
+                    
+                    
+                </ImageView>
+         
+     </LinearLayout>
+      <View android:background="@drawable/shape_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+     
+     <LinearLayout
+               
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@android:color/white">
+                
+          <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/cot2"
+                   />
+          
+            <LinearLayout
+
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                         android:textSize="17sp"
+                        android:layout_height="wrap_content"
+                       android:textColor="#5B5B5B"
+                        android:text="设置"
+                       />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="账号设置，常见问题等"
+                        android:textColor="#9D9D9D"
+                        />
+                </LinearLayout>
+                
+            <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="120dp"
+                    android:layout_gravity="center_vertical"
+                     android:background="@drawable/more"
+                    >
+                    
+                    
+                </ImageView>
+         
+     </LinearLayout>
+    
+
+</LinearLayout>

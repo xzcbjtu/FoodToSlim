@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+       
+        android:background="@android:color/white"
+        android:layout_width="fill_parent" 
+        android:orientation="horizontal"
+        android:layout_height="50dip">
+        
+        <EditText 
+            android:layout_width="350dp"
+            android:layout_height="30dip"
+            android:background="#F0F0F0"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical"
+            android:drawablePadding="8dp"
+            android:drawableLeft="@drawable/search3"
+            android:hint="搜菜谱"
+            android:textSize="14.0sp" android:textColor="#ff545454"
+            />
+       
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/pager_layout"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layerType="software" 
+        android:background="@android:color/white">
+
+        
+ 
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"      
+        android:clipChildren="false" />
+ 
+    </LinearLayout>
+    
+     <LinearLayout 
+      
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:background="@android:color/white">
+    
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:layout_marginTop="15dp"
+             >
+         <TextView 
+             android:layout_marginLeft="6dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_vertical"
+             android:textSize="16.0sp" android:textColor="#ff545454"
+             android:text="每日推荐·周围人都在看"
+             />
+         <Button
+             android:layout_marginLeft="115dp"
+             android:layout_width="16.0sp"
+             android:layout_height="16.0sp"
+             android:layout_gravity="center_vertical"
+             android:background="@drawable/refresh"
+             ></Button>
+         <TextView 
+             android:layout_marginLeft="5dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_vertical"
+             android:textSize="14.0sp" android:textColor="#ff545454"
+             android:text="换一换"
+             />
+
+        </LinearLayout>
+        
+         
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:layout_marginTop="20dp"
+             >
+         
+              <LinearLayout
+             android:layout_width="110dp"
+             android:layout_height="150dp"
+             android:orientation="vertical"
+             android:layout_marginLeft="10dp">
+             
+                  <ImageView
+                       android:id="@+id/breakfast"
+                       android:layout_width="match_parent"
+                       android:layout_height="90dp"
+                       android:background="@drawable/breakfast" />
+                  
+                  <TextView 
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textSize="15.0sp"
+                       android:textColor="#ff545454"
+                       android:layout_marginTop="10dp"
+                       android:layout_gravity="center_horizontal"
+                       android:text="早餐"/>
+                  
+                  
+             </LinearLayout>
+         
+         
+              <LinearLayout
+             android:layout_width="110dp"
+             android:layout_height="150dp"
+             android:orientation="vertical"
+             android:layout_marginLeft="10dp" >
+             
+                  <ImageView
+                       android:id="@+id/lunch"
+                       android:layout_width="match_parent"
+                       android:layout_height="90dp"
+                        android:background="@drawable/lunch" />
+                  
+                  <TextView 
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textSize="15.0sp"
+                       android:textColor="#ff545454"
+                       android:layout_marginTop="10dp"
+                       android:layout_gravity="center_horizontal"
+                       android:text="午餐"/>
+                  
+             </LinearLayout>
+             
+              <LinearLayout
+             android:layout_width="110dp"
+             android:layout_height="150dp"
+             android:orientation="vertical"
+             android:layout_marginLeft="10dp" >
+             
+                  <ImageView
+                       android:id="@+id/dinner"
+                       android:layout_width="100dp"
+                       android:layout_height="90dp" 
+                       android:background="@drawable/dinner"/>
+                  
+                  <TextView 
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textSize="15.0sp"
+                       android:textColor="#ff545454"
+                       android:layout_marginTop="10dp"
+                       android:layout_gravity="center_horizontal"
+                       android:text="晚餐"/>
+                  
+             </LinearLayout>
+ 
+         </LinearLayout>
+ 
+    </LinearLayout>
+    
+    
+    
+    
+    
+    
+    
+</LinearLayout>

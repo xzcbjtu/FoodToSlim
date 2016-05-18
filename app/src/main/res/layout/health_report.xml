@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout    
+  android:orientation="vertical" 
+  android:background="@color/white" 
+  android:layout_width="fill_parent" 
+  android:layout_height="fill_parent" 
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  
+    <LinearLayout 
+         android:orientation="horizontal" 
+         android:background="@android:color/white"
+         android:layout_width="fill_parent" 
+         android:layout_height="50dp"
+         > 
+          
+             <ImageView 
+                 android:layout_width="50dp"
+                 android:layout_height="50dp"
+                 android:background="@drawable/retur1"
+                 android:layout_marginTop="0dp"
+                 android:layout_marginLeft="0dp"/>
+             <TextView 
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="健康报告"
+                 
+                 android:layout_marginLeft="100dp"
+                 android:layout_gravity="center_vertical"
+                 android:textColor="#5B5B5B"
+                 android:textSize="18sp"/>
+         
+     </LinearLayout>
+     
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="@drawable/healthreport"
+        
+        >
+        <TextView 
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="65.7"
+            android:layout_marginTop="97dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#FF0000"
+            android:textSize="30sp"/>
+        
+        <TextView 
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30.4~82.9"
+            android:layout_marginTop="34dp"
+            android:layout_marginLeft="130dp"
+            android:textColor="#5B5B5B"
+            android:textSize="14sp"/>
+        
+        <TextView 
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="71"
+            android:layout_marginTop="163dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#FF2D2D"
+            android:textSize="28sp"/>
+        
+         <TextView 
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="65.4~76.9"
+            android:layout_marginTop="46dp"
+            android:layout_marginLeft="137dp"
+            android:textColor="#5B5B5B"
+            android:textSize="14sp"/>
+        
+    </LinearLayout>
+  
+    
+    
+    
+
+    
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout    
+  android:orientation="vertical" 
+  android:background="@color/white" 
+  android:layout_width="fill_parent" 
+  android:layout_height="fill_parent" 
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout 
+        android:orientation="vertical"
+      
+        android:layout_width="fill_parent" 
+        android:layout_height="50dip">
+        <TextView android:layout_centerInParent="true" android:textColor="#ff545454" android:textSize="20.0sp"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="完善资料1/2" />
+        
+    </RelativeLayout>
+    
+        
+    <LinearLayout 
+        android:orientation="vertical" 
+        android:background="@drawable/shape_bg" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content">       
+      
+        
+        
+       
+          <View android:background="@drawable/shape_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+
+         
+
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="@android:color/black" android:paddingLeft="15.0dip" android:layout_width="1px" android:layout_height="wrap_content" android:gravity="left" android:text="性别" android:layout_weight="2"/>
+
+            <RadioGroup
+                android:id="@+id/rBtGroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                 >
+            <RadioButton
+                android:id="@+id/rBt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"   
+                android:text="男"
+                android:checked = "true"
+                android:textColor="#ff545454" />
+            
+            <RadioButton
+                android:id="@+id/rBt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女" 
+                
+                android:textColor="#ff545454"/>
+            </RadioGroup>
+
+        </LinearLayout>
+        
+        
+        
+        <View android:background="@drawable/shape_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="@android:color/black" android:paddingLeft="15.0dip" android:layout_width="1px" android:layout_height="wrap_content" android:gravity="left" android:text="出生日期" android:layout_weight="2"/>
+
+     <TextView android:textSize="16.0sp"  android:id="@+id/birthday" android:background="@android:color/white" android:text="点击选择生日"  android:textColor="#00BB00"  android:paddingRight="15.0dip" android:layout_width="1px"   android:layout_height="wrap_content"  android:maxLength="20"  android:layout_weight="1"/>
+    
+           
+           
+        </LinearLayout>
+        <View android:background="@drawable/shape_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+             <TextView android:textSize="18.0sp" android:textColor="@android:color/black" android:paddingLeft="15.0dip" android:layout_width="1px" android:layout_height="wrap_content" android:gravity="left" android:text="身高" android:layout_weight="3"/>
+            <EditText android:textSize="16.0sp" android:textColor="#ff545454" android:id="@+id/height" android:background="@android:color/white"  android:layout_width="1px" android:gravity="right"  android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="15.0dip" android:hint="输入当前身高" android:maxLength="20" android:inputType="number" android:layout_weight="2"/>
+            <TextView android:textSize="18.0sp"  android:paddingRight="15.0dip" android:layout_width="1px" android:layout_height="wrap_content" android:gravity="left" android:text="厘米" android:textColor="#00BB00" android:layout_weight="1.5"/>
+        </LinearLayout>
+        
+        <View android:background="@drawable/shape_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+             <TextView android:textSize="18.0sp" android:textColor="@android:color/black" android:paddingLeft="15.0dip" android:layout_width="1px" android:layout_height="wrap_content" android:gravity="left" android:text="当前体重" android:layout_weight="3"/>
+            <EditText android:textSize="16.0sp" android:textColor="#ff545454" android:id="@+id/weight" android:background="@android:color/white"  android:layout_width="1px" android:gravity="right"  android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="15.0dip" android:hint="输入当前体重" android:maxLength="20" android:inputType="number" android:layout_weight="2"/>
+            <TextView android:textSize="18.0sp"  android:paddingRight="15.0dip" android:layout_width="1px" android:layout_height="wrap_content" android:gravity="left" android:text="公斤" android:textColor="#00BB00" android:layout_weight="1.5"/>
+        </LinearLayout>
+        
+         <Button android:id="@+id/btNext"  android:textSize="18.0sp" android:textColor="#ffffffff"  android:background="#BEBEBE" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:text="下一步" />
+        
+    </LinearLayout>
+    
+     <DatePicker
+        android:id="@+id/dpPicker"
+        android:calendarViewShown="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="40.0dip"
+        android:visibility="invisible" />
+   
+
+
+   
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0F0F0">
+
+    
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/weekplan_bg">
+
+            
+             <LinearLayout 
+                 android:orientation="vertical" 
+                 android:background="#20000000"
+                 android:layout_width="fill_parent" 
+                 android:layout_height="50dp"> 
+          
+             <TextView 
+                 android:layout_width="50dp"
+                 android:layout_height="50dp"
+                 android:background="@drawable/retur"
+                 android:layout_marginTop="0dp"
+                 android:layout_marginLeft="10dp"/>
+         
+             </LinearLayout>
+         </LinearLayout>
+
+        <ListView 
+        android:id="@+id/weekplanlist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="14dp"
+        ></ListView>
+    
+</LinearLayout>

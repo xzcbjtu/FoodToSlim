@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout    
+  android:orientation="vertical" 
+  android:background="@color/white" 
+  android:layout_width="fill_parent" 
+  android:layout_height="fill_parent" 
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  
+    <LinearLayout 
+         android:orientation="horizontal" 
+         android:background="@android:color/white"
+         android:layout_width="fill_parent" 
+         android:layout_height="50dp" > 
+          
+             <ImageView 
+                 android:layout_width="50dp"
+                 android:layout_height="50dp"
+                 android:background="@drawable/retur1"
+                 android:layout_marginTop="0dp"
+                 android:layout_marginLeft="0dp"/>
+             <TextView 
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="体重记录"
+                 
+                 android:layout_marginLeft="100dp"
+                 android:layout_gravity="center_vertical"
+                 android:textColor="#5B5B5B"
+                 android:textSize="18sp"/>
+         
+     </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/record_bg" >
+
+        <TextView
+            android:id="@+id/weightchange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:text="-16.0"
+            android:textColor="#009100"
+            android:textSize="30sp" />
+
+        <bjtu.edu.cn.foodtoslim.util.ChartView
+            android:id="@+id/myChartView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="271dp" />
+
+        <TextView
+            android:id="@+id/bmi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/weightchange"
+            android:layout_below="@+id/weightchange"
+            android:layout_marginTop="80dp"
+            android:text="23.9"
+            android:textColor="#009100"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/beginweight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="55dp"
+            android:layout_marginTop="20dp"
+            android:text="75"
+            android:textColor="#4F4F4F"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/previousweight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="57dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="55dp"
+            android:text="59"
+            android:textColor="#4F4F4F"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/goalweight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/previousweight"
+            android:layout_marginRight="55dp"
+            android:layout_marginTop="13dp"
+            android:text="58"
+            android:textColor="#4F4F4F"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/leftweight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/goalweight"
+            android:layout_marginTop="154dp"
+            android:layout_marginLeft="10dp"
+            android:text="1.0"
+            android:textColor="#4F4F4F"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+    
+</LinearLayout>
